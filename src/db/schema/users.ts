@@ -4,13 +4,12 @@ import {
   mysqlTable,
   varchar,
   timestamp,
-  binary,
 } from 'drizzle-orm/mysql-core'
 
 export const userRoleEnum = mysqlEnum('user_roles', ['manager', 'customer'])
 
 export const users = mysqlTable('users', {
-  id: binary('id')
+  id: varchar('id', { length: 255 })
     .$defaultFn(() => createId())
     .primaryKey(),
   name: varchar('name', { length: 255 }).notNull(),

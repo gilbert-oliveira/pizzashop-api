@@ -1,15 +1,15 @@
 import { createId } from '@paralleldrive/cuid2'
-import { mysqlTable, varchar, timestamp, binary } from 'drizzle-orm/mysql-core'
+import { mysqlTable, varchar, timestamp } from 'drizzle-orm/mysql-core'
 import { relations } from 'drizzle-orm'
 import { users } from './users'
 
 export const restaurants = mysqlTable('restaurants', {
-  id: binary('id')
+  id: varchar('id', { length: 255 })
     .$defaultFn(() => createId())
     .primaryKey(),
   name: varchar('name', { length: 255 }).notNull(),
   description: varchar('description', { length: 255 }),
-  managerId: binary('manager_id').references(() => users.id, {
+  managerId: varchar('manager_id', { length: 255 }).references(() => users.id, {
     onDelete: 'set null',
   }),
   createdAt: timestamp('created_at').defaultNow(),
