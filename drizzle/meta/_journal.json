@@ -5,36 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1709572550855,
-      "tag": "0000_fancy_nighthawk",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1709573623164,
-      "tag": "0001_marvelous_thor_girl",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1709605012705,
-      "tag": "0002_organic_randall_flagg",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "5",
-      "when": 1709605728624,
-      "tag": "0003_high_maverick",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "5",
-      "when": 1709605738727,
-      "tag": "0004_cloudy_vengeance",
+      "when": 1709614894561,
+      "tag": "0000_graceful_carlie_cooper",
       "breakpoints": true
     }
   ]
